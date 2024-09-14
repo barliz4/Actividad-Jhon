@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<header> 
+    <body style="background-color: rgb(33, 112, 46);">
+    <h1> Formulario </h1>
+
+</header>
+
+<body>
+    <p> Nombre </p>
+    <div>
+        <input type="text" id="nombre" pattern="[a-zA-Z]+" required>
+     <div>
+
+    <p> Apellidos </p>
+    <div>
+        <input type="text">
+     <div>
+
+    <p> Color </p>
+    <div>
+        <input type="color" id="color" required>
+     <div>
+
+    <p> Edad </p>
+    <div>
+        <input type="number" id="edad" required>
+    <div>
+
+<p> Números </p>
+    <div>
+        <input type="text" id="numeros" oninput="this.value = this.value.replace(/[^0-9]/g, '');" required>
+        <div>    
+
+<p> Positivos </p>
+    <div>
+        <input type="text">
+<div>
+    
+<p> Máximo-Mínimo </p>
+    <div>
+        <input type="text">
+<div> 
+
+<p> Fecha Nacimiento </p>
+    <div>
+        <input type="date" id="fecha" required>
+        
+<div>
+
+<p> Hora </p>
+    <div>
+        <input type="text" id="numeros" oninput="this.value = this.value.replace(/[^0-9]/g, '');" required>
+<div>
+
+<p> Ciudad </p>
+    <div>
+        <select id="ciudad" required>
+            <option value="Bucaramanga">Bucaramanga</option>
+            <option value="Giron">Giron</option>
+            <option value="Floridablanca">Floridablanca</option>
+         </select>
+<div>
+
+<p> Género </p>
+    <div>
+        <select id="genero" required>
+        <option value="Masculino">Masculino</option>
+        <option value="Femenino">Femenino</option>
+        </select>
+<div>
+
+
+<p> Materias </p>
+    <div>
+        <select id="materias" multiple>
+            <option value="HTML">HTML</option>
+            <option value="CSS">CSS</option>
+            <option value="JS">JavaScript</option>
+            <option value="JAVA">Java</option>
+            <option value="PYTHON">Python</option>
+            <option value="PHP">PHP</option>
+        </select>
+<div>
+
+<p> Archivos </p>
+    <div>
+        <input type="file" id="archivos" accept=".jpg, .png" multiple required>
+<div>
+
+<p> Contraseña </p>
+    <div>
+        
+        <input type="password" id="password" required>
+<div>
+
+ <p> Aprendiz </p>
+    <div>
+        <input type="text" id="aprendiz" value="Nombre del Aprendiz" readonly>
+<div>
+
+<type="number" min="0" max="100" required>
+
+<button type="submit">Enviar</button>
+</form>
+
